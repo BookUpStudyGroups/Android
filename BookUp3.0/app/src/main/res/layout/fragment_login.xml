@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BookUp"
+            android:fontFamily="Droid Sans"
+            android:layout_marginTop="15dp"
+            android:textSize="60sp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/bookUpBlue"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Study Skillfully!"
+            android:fontFamily="Droid Sans"
+            android:layout_marginBottom="40dp"
+            android:textSize="18sp"
+            android:textColor="@color/bookUpBlue"/>
+
+        <EditText
+            android:id="@+id/email_add"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Email"
+            android:textAlignment="center"
+            android:textColor="@color/bookUpBlue"
+            android:fontFamily="Droid Sans"
+            android:inputType="textEmailAddress"
+            android:textSize="20sp"
+            android:background="@drawable/edit_text_login"
+            android:singleLine="true"
+            android:textColorHint="#c8c8cc"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <EditText
+            android:id="@+id/email_pass"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Passcode"
+            android:fontFamily="Droid Sans"
+            android:background="@drawable/edit_text_login"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="@color/bookUpBlue"
+            android:textSize="20sp"
+            android:textColorHint="#c8c8cc"
+            android:singleLine="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Log In"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:fontFamily="Droid Sans"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/rounded_button"
+            android:id="@+id/loginButt"
+            android:onClick="logIn"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot passcode?"
+            android:textColor="#7586ca"
+            android:fontFamily="Droid Sans"
+            android:textStyle="italic"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|bottom">
+
+            <Button
+                android:id="@+id/signupbutt"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="Sign Up"
+                android:textColor="#ffffff"
+                android:fontFamily="Droid Sans"
+                android:gravity="center"
+                android:background="@drawable/sign_up_rectangle"
+                android:onClick="signUp"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+</RelativeLayout>

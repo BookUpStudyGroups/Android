@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="org.Bookup.Android.BookUpApp.Activity.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/placeholder"
+        >
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/FragmentListView"
+            android:background="@drawable/listview_background"
+            />
+
+        <ListView
+            android:id="@+id/FragmentListView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:entries="@array/list_array"
+            android:background="@drawable/listview_background"
+
+            android:visibility="gone"
+            android:clickable="false"
+            ></ListView>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_gravity="end|bottom"
+            />
+
+
+
+
+
+    </FrameLayout>
+</RelativeLayout>
