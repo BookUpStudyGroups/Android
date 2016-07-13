@@ -43,4 +43,10 @@ public class ClassPageFragment extends Fragment {
         tv.setText(mEntry.getDept() + " " +mEntry.getNumber());
         return view;
     }
+
+
+
+
+
+
 }

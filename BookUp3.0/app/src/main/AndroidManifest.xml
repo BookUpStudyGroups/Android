@@ -20,7 +20,10 @@
         <activity
             android:name="org.Bookup.Android.BookUpApp.Activity.MainActivity"
             android:label="BookUp"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,4 +32,4 @@
         </activity>
     </application>
 
-</manifest>
+</manifest>s

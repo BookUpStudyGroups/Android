@@ -27,6 +27,7 @@
         android:maxHeight="100dp"
         android:background="@drawable/buddybtn"
         android:clickable="true"
+        android:onClick="buddyClick"
         android:layout_below="@+id/ClassName"
         android:layout_alignParentStart="true"
         android:layout_marginStart="40dp" />
@@ -41,23 +42,45 @@
         android:background="@drawable/groupbtn"
         android:layout_marginEnd="40dp"
         android:layout_below="@+id/ClassName"
+        android:onClick="groupClick"
         android:layout_alignParentEnd="true" />
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:background="@drawable/divideline"
-        android:id="@+id/imageview"
-        android:layout_below="@+id/imageButton"
-        android:layout_alignParentStart="true" />
 
     <ListView
-        android:layout_alignBottom="@+id/imageview"
-        android:entries="@array/list_array"
+        android:layout_below="@+id/textView4"
+
+        android:entries="@array/class_array"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/listView"
         android:layout_centerHorizontal="true"
         android:background="#ffffff"
         android:layout_alignParentBottom="true"
-        android:layout_below="@+id/imageview" />
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Request \n Study Buddy"
+        android:id="@+id/textView4"
+        android:textColor="#ffffff"
+        android:fontFamily="sans-serif"
+
+        android:textAlignment="center"
+        android:layout_below="@+id/imageButton"
+        android:layout_alignEnd="@+id/imageButton" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Create \n Study Group"
+        android:id="@+id/textView5"
+        android:textColor="#ffffff"
+        android:fontFamily="sans-serif"
+
+        android:textAlignment="center"
+        android:layout_below="@+id/imageButton2"
+        android:layout_alignEnd="@+id/imageButton2" />
+
+
 </RelativeLayout>

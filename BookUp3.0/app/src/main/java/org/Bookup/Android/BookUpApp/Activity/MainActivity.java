@@ -3,10 +3,12 @@ package org.Bookup.Android.BookUpApp.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.AnimationUtils;
 
 import org.Bookup.Android.BookUpApp.Fragment.LoginFragment;
 import org.Bookup.Android.BookUpApp.Fragment.MainFragment;
@@ -232,4 +234,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void buddyClick(View v){
+        v.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.image_click));
+
+
+
+
+
+    }
+    public void groupClick(View v)  {
+
+        v.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.image_click));
+    }
+
+
+
+
+
 }
